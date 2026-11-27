@@ -1,0 +1,20 @@
+# Python / Jupyter
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+.env
+
+# Data & generated artefacts (not committed)
+data/
+*.xlsx
+*.csv
+*.h5
+*.keras
+*.png
+!report/*.png
+
+# OS
+.DS_Store
+Thumbs.db
