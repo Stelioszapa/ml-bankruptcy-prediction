@@ -13,10 +13,34 @@ Binary classification of companies as **healthy (Y=1)** or **bankrupt (Y=2)** fr
 - **Classifiers:** k-NN, Gaussian Naive Bayes, SVM, LDA, Logistic Regression, Decision Tree, Random Forest and Passive-Aggressive. Each is tuned with `GridSearchCV` (cv=3).
 - **Metrics:** confusion matrix, accuracy, balanced accuracy, precision, recall, F1 and ROC-AUC on both train and test sets. Bankrupt is the positive class.
 
+## Results
+
+Mean recall and mean balanced accuracy on the test set, across the 4 folds, for all 8 classifiers:
+
+<p align="center">
+  <img src="report/figures/Figure_Recall_Mean.png" width="48%">
+  <img src="report/figures/Figure_BalancedAccuracy_Mean.png" width="48%">
+</p>
+
+Fold-to-fold spread for the same two metrics:
+
+<p align="center">
+  <img src="report/figures/Figure_Recall_Boxplot.png" width="48%">
+  <img src="report/figures/Figure_BalancedAccuracy_Boxplot.png" width="48%">
+</p>
+
+Dataset composition (healthy vs. bankrupt companies per year) and summary statistics of the continuous indicators:
+
+<p align="center">
+  <img src="report/figures/Figure_1_new.png" width="48%">
+  <img src="report/figures/Figure_2.png" width="48%">
+</p>
+
 ## Repository structure
 
 ```
 notebooks/bankruptcy_classification.ipynb   # full pipeline (Google Colab)
+report/figures/                             # result plots referenced above
 requirements.txt
 ```
 
